@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "test_sigma.js",
         "cursor": {
-          "lineNumber": 2,
-          "column": 5
+          "lineNumber": 4,
+          "column": 18
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -22,7 +22,12 @@
           "layers": [],
           "name": "testsigma"
         },
-        "triggers": [],
+        "triggers": [
+          {
+            "resourceName": "apigtestsigmahelloget",
+            "config": {}
+          }
+        ],
         "lastUpdated": 1622847824100
       }
     },
@@ -30,7 +35,27 @@
       "869fe687-13a5-4a05-bcd7-419962848430"
     ],
     "currentFileId": "869fe687-13a5-4a05-bcd7-419962848430",
-    "resources": {},
+    "resources": {
+      "apigtestsigmahelloget": {
+        "name": "apigtestsigmahelloget",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 1,
+          "apiMode": 0,
+          "apiName": "testsigma",
+          "endpointType": "REGIONAL",
+          "resourceMode": 0,
+          "resourceName": "hello",
+          "resourcePath": "/hello",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "dev",
+          "mode": 0
+        }
+      }
+    },
     "customTemplate": {
       "syntax": "JSON",
       "overrideDefault": false,
